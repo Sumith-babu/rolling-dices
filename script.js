@@ -61,7 +61,7 @@ btnHold.addEventListener('click',function(){
     if(playing){
         score[activePlayer]+=current;
         document.querySelector(`#score--${activePlayer}`).textContent=score[activePlayer];
-        if(score[activePlayer]>=20){
+        if(score[activePlayer]>=100){
             playing= false;
             diceEl.classList.add('hidden');
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
